@@ -103,6 +103,15 @@ section img#old_map {
   font-size: 7.5vw;
   z-index: 9;
 }
+
+#text1 {
+  position: absolute;
+  color: white;
+  white-space: nowrap;
+  font-size: 15px;
+}
+
+
 #btn {
   text-decoration: none;
   padding: 8px 30px;
