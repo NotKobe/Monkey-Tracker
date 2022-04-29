@@ -8,7 +8,7 @@
 
 body {
   min-height: 100vh;
-  background: linear-gradient(#07b3ec, #000000, #ffffff);
+  background: linear-gradient( #9c27b0, #8ecdff);
 }
 
 header {
@@ -30,6 +30,10 @@ header .logo {
   font-size: 2em;
   text-transform: uppercase;
   letter-spacing: 2px;
+  flex-basis: 20%;
+}
+.logo img{
+  width: 100px;
 }
 
 header ul {
@@ -70,7 +74,7 @@ section::before {
   bottom: 0;
   width: 100%;
   height: 100px;
-  background: linear-gradient(to top, blue, transparent);
+  background: linear-gradient(to left pink, transparent);
 }
 
 section img {
@@ -86,6 +90,11 @@ section img {
 section img#six_monkeys {
   mix-blend-mode: screen;
 }
+
+section img#old_map {
+  mix-blend-mode: screen;
+}
+
 
 #text {
   position: absolute;
