@@ -18,7 +18,7 @@ $(function() {
                 response.tweetinfo.forEach(function(tweetinfo){
                     tbodyEl2.append('\
                         <tr>\
-                        <td class="tweetid">' + tweetinfo.screen + '</td>\
+                        <td class="id">' + tweetinfo.id + '</td>\
                         <td class="tweettext">' + tweetinfo.tweettext +'</td>\
                         <td>\
                         </td>\
@@ -33,9 +33,6 @@ $(function() {
             
         });
     });
-
-
-
 
 });
 

@@ -10,7 +10,7 @@ var fs = require('fs');
 var tweetinfo = []
 
 //load the input file
-fs.readFile('favs.json', 'utf8', function readFileCallback(err,data ){
+fs.readFile('tweets.json', 'utf8', function readFileCallback(err,data ){
   if(err){
     req.log.info('cannot load a file:' + fileFolder + '/' + _file_name)
     throw err;
@@ -19,7 +19,7 @@ fs.readFile('favs.json', 'utf8', function readFileCallback(err,data ){
     let tweetData = JSON.parse(data)
     tweetData.forEach(function(element) {
       tweetinfo.push({tweetid:element.id,tweettext:element.text,
-        id:element.user.id,name:element.user.name,screen:element.user.screen_name});
+        id:element.author_id});
     });
   }
 });
@@ -41,8 +41,7 @@ app.get('/tweetinfo', function(req, res) {
 });
 
 
-
-
+//Start server
 app.listen(PORT, function() {
   console.log('Server listening on ' + PORT);
 });
