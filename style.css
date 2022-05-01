@@ -7,6 +7,9 @@
   font-family: Roboto;
 }
 
+html{
+  scroll-behavior: smooth;
+}
 body {
   min-height: 100vh;
   background: linear-gradient( #9c27b0, #8ecdff);
