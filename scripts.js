@@ -18,9 +18,8 @@ $(function() {
                 response.tweetinfo.forEach(function(tweetinfo){
                     tbodyEl2.append('\
                         <tr>\
-                        <td class="tweetid">' + tweetinfo.tweetid + '</td>\
-                        <td><input type="text" class="name form-control" value="' + tweetinfo.tweettext +'"></td>\
-                        <td><input type="text" class="name form-control" value="' + tweetinfo.time +'"></td>\
+                        <td class="tweetid">' + tweetinfo.screen + '</td>\
+                        <td class="tweettext">' + tweetinfo.tweettext +'</td>\
                         <td>\
                         </td>\
                         </tr>\
